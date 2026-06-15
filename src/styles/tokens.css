@@ -1,0 +1,93 @@
+/**
+ * 设计规范 — Design Tokens
+ *
+ * 所有 UI 组件共享的样式变量，统一管理颜色、字体、间距、圆角、阴影等。
+ * 修改此文件即可全局调整视觉风格。
+ */
+
+:root {
+  /* ── 品牌色 / 主色 ── */
+  --pd-color-primary: #18a058;
+  --pd-color-primary-light: #f0f9eb;
+  --pd-color-primary-bg: #e8f5e9;
+  --pd-color-primary-hover: #f6ffed;
+  --pd-color-primary-shadow: rgba(24, 160, 88, 0.15);
+
+  /* ── 危险色 ── */
+  --pd-color-danger: #d00;
+  --pd-color-danger-light: #fff1f0;
+  --pd-color-danger-shadow: rgba(208, 0, 0, 0.15);
+
+  /* ── 信息色 ── */
+  --pd-color-info: #2080f0;
+
+  /* ── 中性色（文字） ── */
+  --pd-text-primary: #333;
+  --pd-text-regular: #555;
+  --pd-text-secondary: #888;
+  --pd-text-placeholder: #999;
+  --pd-text-disabled: #aaa;
+  --pd-text-faint: #bbb;
+  --pd-text-muted: #ccc;
+
+  /* ── 中性色（背景） ── */
+  --pd-bg-page: #ebedf0;
+  --pd-bg-panel: #fafafa;
+  --pd-bg-subtle: #f5f7fa;
+  --pd-bg-white: #fff;
+
+  /* ── 中性色（边框） ── */
+  --pd-border-light: #eee;
+  --pd-border-base: #e8e8e8;
+  --pd-border-card: #ececec;
+  --pd-border-paper: #d0d4d9;
+  --pd-border-muted: #c0c4cc;
+  --pd-border-grid: #d0d7de;
+  --pd-border-gridline: #e2e4e7;
+
+  /* ── 字号 ── */
+  --pd-font-xs: 10px;
+  --pd-font-sm: 11px;
+  --pd-font-base: 12px;
+  --pd-font-md: 13px;
+  --pd-font-lg: 14px;
+  --pd-font-xl: 15px;
+  --pd-font-xxl: 16px;
+  --pd-font-display: 18px;
+
+  /* ── 字重 ── */
+  --pd-weight-normal: 400;
+  --pd-weight-medium: 500;
+  --pd-weight-semibold: 600;
+
+  /* ── 间距 ── */
+  --pd-space-1: 2px;
+  --pd-space-2: 4px;
+  --pd-space-3: 6px;
+  --pd-space-4: 8px;
+  --pd-space-5: 10px;
+  --pd-space-6: 12px;
+  --pd-space-7: 14px;
+  --pd-space-8: 16px;
+  --pd-space-12: 24px;
+  --pd-space-20: 40px;
+
+  /* ── 圆角 ── */
+  --pd-radius-sm: 2px;
+  --pd-radius-base: 4px;
+  --pd-radius-md: 6px;
+
+  /* ── 阴影 ── */
+  --pd-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --pd-shadow-base: 0 1px 4px rgba(0, 0, 0, 0.08);
+  --pd-shadow-md: 0 1px 4px rgba(0, 0, 0, 0.1);
+  --pd-shadow-paper: 0 6px 28px rgba(0, 0, 0, 0.14);
+  --pd-shadow-selected: 0 0 0 2px var(--pd-color-primary), var(--pd-shadow-sm);
+
+  /* ── 层级 ── */
+  --pd-z-resize: 5;
+  --pd-z-overlay: 6;
+
+  /* ── 过渡 ── */
+  --pd-transition-fast: 0.15s;
+}
